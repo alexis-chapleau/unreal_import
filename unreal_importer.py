@@ -197,7 +197,7 @@ class UnrealImporter(object):
         """
 
         if entity.type.lower() == '1_static_mesh':
-            return UnrealImporter(entity, SkeletalImportTaskStrategy(),
+            return UnrealImporter(entity, StaticImportTaskStrategy(),
                                   AssetExecuteTaskStrategy())
 
         elif entity.type.lower() == '2_skeletal_mesh':
